@@ -1,0 +1,60 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-icon
+            class="color-orange"
+            (click)="clearText()"
+            name="close-circle"
+          ></ion-icon>
+          <ion-input
+            [(ngModel)]="searchText"
+            class="spaced"
+            placeholder="Search..."
+            (ngModelChange)="toggleSuggestions()"
+          ></ion-input>
+          <ion-icon class="color-orange" name="search-outline"></ion-icon>
+        </ion-item>
+        <ion-item *ngIf="showSuggestions">
+          <ion-list>
+            <ion-item *ngFor="let word of suggestions">
+              <ion-label
+                ><a (click)="clearText()" [routerLink]="['word',word]"
+                  >{{word}}</a
+                ></ion-label
+              >
+            </ion-item>
+          </ion-list>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <h1 class="title mb-0">word of the day</h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" class="p-0">
+        <app-word-comp [random]="true"></app-word-comp>
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="searches.hasRecents()">
+      <ion-col>
+        <h1 class="title mb-0">recent searches</h1>
+      </ion-col>
+    </ion-row>
+    <div *ngIf="searches.hasRecents()">
+      <ion-row *ngFor="let search of searches.getRecents()">
+        <ion-col size="12">
+          <app-word-comp
+            [name]="search.word"
+            [infoObj]="search"
+          ></app-word-comp>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
+</ion-content>

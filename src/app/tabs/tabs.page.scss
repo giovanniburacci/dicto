@@ -1,0 +1,50 @@
+ion-tab-button,
+.toolbar-background {
+  background: transparent !important;
+}
+
+ion-tab-bar,
+ion-header {
+  /*background: #1d4350;  fallback for old browsers 
+  background: -webkit-linear-gradient(
+    to right,
+    #a43931,
+    #1d4350
+  );  Chrome 10-25, Safari 5.1-6 
+  background: linear-gradient(
+    to right,
+    #a43931,
+    #1d4350
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #2a1a5e;
+}
+
+ion-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.toolbar-title {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.shadowed {
+  box-shadow: 0 6px 13px 5px rgba(90, 89, 89, 0.315);
+}
+
+.shadowed-top {
+  box-shadow: 0 -6px 13px 5px rgba(90, 89, 89, 0.315);
+}
+
+.centered-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  transform: translateX(50%);
+}

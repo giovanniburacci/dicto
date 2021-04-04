@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,96 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+
+ion-toolbar {
+  //--background: linear-gradient(to right, #a43931, #1d4350) !important;
+  --background: #2a1a5e;
+  color: white !important;
+}
+/*ion-tab-bar {
+  --background: #2a1a5e;
+}*/
+ion-item {
+  --highlight-color-valid: linear-gradient(to right, #a43931, #1d4350);
+}
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Noto+Sans+JP&display=swap");
+.title {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.word {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.no-mt {
+  margin-top: 0px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+a,
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.toolbar-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.color-blue {
+  color: #2a1a5e;
+}
+
+.bg-blue {
+  background: #2a1a5e;
+}
+
+.color-orange {
+  color: #f45905;
+}
+
+.bg-orange {
+  background: #f45905;
+}
+
+.color-lightorange {
+  color: #fb9224;
+}
+
+.bg-lightorange {
+  background: #fb9224;
+}
+
+.color-yellow {
+  color: #fbe555;
+}
+
+.bg-yellow {
+  background: #fbe555;
+}
+
+ion-card {
+  --background: #fbe555;
+}
+
+.spaced {
+  padding-left: 10px !important;
+}

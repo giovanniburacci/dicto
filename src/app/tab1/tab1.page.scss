@@ -1,0 +1,32 @@
+ion-content {
+  padding-top: 20px;
+}
+
+h1 {
+  padding-left: 10px;
+}
+
+.title {
+  margin-top: 30px;
+  font-size: 30px;
+  text-align: right;
+}
+
+#background-content {
+  background: unset !important;
+}
+
+ion-grid {
+  background: white;
+  height: 100%;
+  padding-top: 20px;
+}
+
+ion-toolbar {
+  //--background: linear-gradient(to right, #a43931, #1d4350) !important;
+  color: white !important;
+}
+
+ion-list {
+  width: 100%;
+}

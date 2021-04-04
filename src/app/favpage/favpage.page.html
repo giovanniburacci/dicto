@@ -1,0 +1,29 @@
+<ion-content>
+  <ion-button id="dismiss" (click)="dismiss()" shape="round">
+    <ion-icon name="close"></ion-icon>
+  </ion-button>
+  <ion-grid *ngIf="hasFavs()">
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-icon
+            class="color-orange"
+            (click)="clearText()"
+            name="close-circle"
+          ></ion-icon>
+          <ion-input
+            class="spaced"
+            [(ngModel)]="searchText"
+            placeholder="Search..."
+            (ngModelChange)="filterFavs()"
+          ></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngFor="let fav of myFavs">
+      <ion-col size="12">
+        <app-word-comp [name]="fav.word" [infoObj]="fav"></app-word-comp>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

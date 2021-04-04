@@ -1,0 +1,35 @@
+<ion-content>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide class="blue fullscreen">
+      <div class="full-width">
+        <h1 class="text-white padding">MIGLIORA IL TUO VOCABOLARIO</h1>
+        <ion-icon style="font-size: 100px; color: white" name="book"></ion-icon>
+      </div>
+    </ion-slide>
+    <ion-slide class="white fullscreen">
+      <div class="full-width">
+        <h1 class="text-blue padding">
+          MAI PIÙ PAROLE SULLA PUNTA DELLA LINGUA
+        </h1>
+        <ion-icon
+          class="text-blue"
+          style="font-size: 100px"
+          name="happy"
+        ></ion-icon>
+      </div>
+    </ion-slide>
+    <ion-slide class="orange fullscreen">
+      <div class="full-width">
+        <h1 class="text-white padding">METTITI ALLA PROVA CON DEI QUIZ</h1>
+        <ion-icon style="font-size: 100px; color: white" name="golf"></ion-icon>
+        <div class="volatile">
+          <a [routerLink]="['tabs']"
+            ><ion-button>
+              <ion-icon name="play-forward"></ion-icon>
+            </ion-button>
+          </a>
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

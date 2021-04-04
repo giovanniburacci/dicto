@@ -1,0 +1,13 @@
+#dismiss {
+  --background: #f45905;
+  --background-activatedre: #f45905;
+  --background-activated-opacity: #f45905;
+  --background-focused: #f45905;
+  --background-focused-opacity: #f45905;
+  --background-hover: #f45905;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  font-size: 24px;
+  z-index: 1;
+}

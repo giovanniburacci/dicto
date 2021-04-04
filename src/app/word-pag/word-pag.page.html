@@ -1,0 +1,18 @@
+<ion-content class="pt-20">
+  <ion-grid class="pt-20 full-height">
+    <ion-row>
+      <ion-col>
+        <h1 class="tangerine pl-20">Some definitions for {{word}}</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngFor="let result of obj">
+      <ion-col size="12">
+        <app-word-comp
+          [infoObj]="result"
+          [random]="false"
+          [name]="word"
+        ></app-word-comp>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

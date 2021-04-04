@@ -1,0 +1,26 @@
+<ion-card class="no-mt">
+  <ion-card-header>
+    <ion-card-subtitle>
+      <div class="d-flex align-items-center space-between">
+        <i
+          ><small>-{{ this.partOfSpeech }}</small></i
+        >
+        <ion-icon
+          (click)="this.toggleFav()"
+          class="icon-size"
+          name="{{ this.icon }}"
+        ></ion-icon>
+      </div>
+    </ion-card-subtitle>
+    <ion-card-title
+      ><a *ngIf="!isPage" [routerLink]="['word', word]"
+        ><h2 class="no-mt word">{{ this.word }}</h2></a
+      >
+      <h2 *ngIf="isPage" class="no-mt word">{{ this.word }}</h2></ion-card-title
+    >
+  </ion-card-header>
+
+  <ion-card-content>
+    {{ this.definition }}
+  </ion-card-content>
+</ion-card>
